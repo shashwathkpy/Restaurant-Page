@@ -11,7 +11,7 @@ const createRestaurantHomePage = () =>
     pageContent.append(headline);
 
     const image = document.createElement('img');
-    image.src = '/images/smoothie.jpg';
+    image.src = './images/smoothie.jpg';
     image.height = '300';
     pageContent.appendChild(image);
 

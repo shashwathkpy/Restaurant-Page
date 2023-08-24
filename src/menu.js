@@ -11,7 +11,7 @@ const createMenuPage = () =>
     pageContent.appendChild(heading);
 
     const image = document.createElement('img');
-    image.src = '/images/flavors.jpg';
+    image.src = './images/flavors.jpg';
     image.id = 'flavors';
     image.height = '300';
     pageContent.appendChild(image);
