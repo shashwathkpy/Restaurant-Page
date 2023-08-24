@@ -4,14 +4,8 @@ import createMenuPage from './menu';
 
 function headerTabs()
 {
-
-}
-
-function initialLoad() 
-{
-    const body = document.querySelector('body');
-    const header = document.createElement('div');
-    header.classList.add('heading');
+    const header = document.querySelector('#header');
+    // header.classList.add('heading');
 
     const homeButton = document.createElement('button');
     homeButton.textContent = 'Home';
@@ -40,8 +34,11 @@ function initialLoad()
         createContactPage();
     })
 
-    body.appendChild(header);
+}
 
+function initialLoad() 
+{
+    headerTabs();
     createRestaurantHomePage();
 }
 
@@ -54,6 +51,4 @@ function pageClear()
     }
 }
 
-
-// export default headerTabs;
 export default initialLoad;
